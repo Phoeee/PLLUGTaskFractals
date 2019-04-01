@@ -1,0 +1,16 @@
+﻿<Window x:Class="PLLUGTaskFractals.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLLUGTaskFractals"
+        mc:Ignorable="d"
+        Title="MainWindow" Width="800" Height="700" ResizeMode="CanMinimize">
+    <Grid>
+        <TextBox x:Name="TextBoxInput"  HorizontalAlignment="Left" Height="23" Margin="648,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" PreviewTextInput="TextBox_PreviewTextInput" TextChanged="TextBoxInput_TextChanged" Text="0"/>
+        <Label Content="Enter max depth:" HorizontalAlignment="Left" Margin="643,40,0,0" VerticalAlignment="Top" Width="106" Height="26"/>
+        <Canvas x:Name="canvasFractal" HorizontalAlignment="Left" Height="600" Margin="10,26,0,0" VerticalAlignment="Top" Width="600"/>
+        <Button x:Name="buttonRun" Content="Go" HorizontalAlignment="Left" FontSize="16" Click="ButtonRun_Click" Margin="648,100,0,0" VerticalAlignment="Top" Width="95" Height="40"/>
+        <Label x:Name="labelDepth" Content="" HorizontalAlignment="Left" Margin="648,145,0,0" VerticalAlignment="Top" Width="95"/>
+    </Grid>
+</Window>
